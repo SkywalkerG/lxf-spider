@@ -3,7 +3,9 @@ import requests
 from lxml import etree
 from bs4 import BeautifulSoup
 import time
+
 url = 'http://8btc.com/'
+urls = 'http://8btc.com/forum-61-{}.html'
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
 }

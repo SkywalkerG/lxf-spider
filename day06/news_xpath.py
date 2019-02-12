@@ -16,6 +16,7 @@ xpath_data = etree.HTML(r)
 #            3. 精确标签 //a[@属性名="属性标签"]
 #            4. 标签包裹的内容 text()
 #            5. 属性:@href
+# 注意事项 //li[3] 可以取到平级li标签的第三个  //li//a[2] 取到的是空  a必须为平级标签才能用列表
 # 2. 调用xpath的方法
 result = xpath_data.xpath('/html/head/title/text()')
 print(result)
