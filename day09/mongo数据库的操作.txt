@@ -1,0 +1,31 @@
+查看所有数据库 show dbs
+切换数据库 use xxx
+查看当前数据库 db
+如果有数据自动创建 不需要手动新建库建表
+
+删除数据库   use xxx
+           db.dropDatebase()
+
+
+
+查看所有集合(表) show collections
+
+use aaa 如果aaa不存在 则相当于创建了新的数据库
+集合操作（表）
+创建集合
+db.createCollection('abc') 在aaa库中 新建 abc的表
+查询集合
+db.collections
+删除集合
+db.集合名字.drop()
+在集合中添加数据
+db.集合名字.insert({'name':'zhangsan'})
+如果集合名字存在，则在表中添加数据
+如果集合不存在,则创建表并添加数据
+
+数据库能存储的类型
+object ID   string      Array
+Boolean     object      timestap
+date        double      integer
+
+

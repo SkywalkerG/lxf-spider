@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="389a6b63-3059-4f50-8ac5-97b0dad81ae6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day08/taobao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day09/mongo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/mongodb文档内容操作.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day09/mongo数据库的操作.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day08/allitebooks.json" beforeDir="false" afterPath="$PROJECT_DIR$/day08/allitebooks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day08/allitebooks.py" beforeDir="false" afterPath="$PROJECT_DIR$/day08/allitebooks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day09/mongo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/day09/mongo.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +26,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day09/mongo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="368">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day09/mongo数据库的操作.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day09/mongodb文档内容操作.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -55,6 +72,7 @@
       <find>Twitter For Dummies, 2nd Edition</find>
       <find>Nick Robinson</find>
       <find>Laura Fitton</find>
+      <find>中学生时尚潮流女初中生高中生大容量韩版背包</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -74,21 +92,22 @@
         <option value="$PROJECT_DIR$/day08/allitebooks.py" />
         <option value="$PROJECT_DIR$/day08/taobao.py" />
         <option value="$PROJECT_DIR$/day09/mongo.txt" />
+        <option value="$PROJECT_DIR$/day09/mongo数据库的操作.txt" />
+        <option value="$PROJECT_DIR$/day09/mongodb文档内容操作.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="518" />
-    <option name="y" value="339" />
-    <option name="width" value="1400" />
-    <option name="height" value="820" />
+    <option name="x" value="395" />
+    <option name="y" value="211" />
+    <option name="width" value="1210" />
+    <option name="height" value="645" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -96,10 +115,16 @@
               <item name="lxf-spider" type="b2602c69:ProjectViewProjectNode" />
               <item name="lxf-spider" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lxf-spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lxf-spider" type="462c0819:PsiDirectoryNode" />
+              <item name="day09" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,12 +282,13 @@
       <option name="presentableId" value="Default" />
       <updated>1549978558209</updated>
       <workItem from="1549978562734" duration="9628000" />
-      <workItem from="1550026100324" duration="14172000" />
+      <workItem from="1550026100324" duration="14432000" />
+      <workItem from="1550058326758" duration="3319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23800000" />
+    <option name="totallyTimeSpent" value="27379000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -274,23 +300,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="518" y="339" width="1400" height="820" extended-state="0" />
+    <frame x="395" y="211" width="1210" height="645" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15149254" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17652173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32944608" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28900257" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39897698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32992327" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32944608" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.37340152" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5714286" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32944608" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -325,13 +351,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day08/01-data.json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/day08/01-data.json.py" />
     <entry file="file://$PROJECT_DIR$/day08/a.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -441,8 +461,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/day09/mongo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="368">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09/mongo数据库的操作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day09/mongodb文档内容操作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

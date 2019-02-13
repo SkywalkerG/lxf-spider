@@ -1,0 +1,29 @@
+增/删/改/查询/查询结果显示/符合查询
+
+增 insert
+db.集合名字.insert() 插入一个字典
+如果嫌弃 "_id" 过长可以
+data = {
+    "_id": 2,
+    "name": 'jerry',
+    'age': 18,
+    'gender': true
+}
+db.集合名字.insert(data)
+db.stu.insert({"_id": 3,"name": '张三','age': 18,'gender': true})
+db.stu.insert({"_id": 4,"name": '李四','age': 18,'gender': true})
+db.stu.insert({"_id": 5,"name": '王五','age': 18,'gender': true})
+db.stu.insert({"_id": 6,"name": 'jerry','age': 18,'gender': true})
+
+删除
+db.集合名字.remove({'name':"zhangsan"})
+db.集合名字.remove({'gender':true})
+符合条件的都会删除
+如何只删除符合条件的第一个? justOne
+db.集合名字.remove({'gender':true},{justOne:true})
+
+删除所有集合内容
+db.stu.remove({})
+db.stu.drop() 把表也删除了， 而上面的remove不删除表，只删除表里面的数据
+
+更改 update

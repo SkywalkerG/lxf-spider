@@ -1,5 +1,16 @@
+创建用户名密码
 use admin
 db.createUser({user: 'A', pwd:'123456', roles:["root"]})
-show users
 
-db.auth('A', '123456')
+想继续创建用户名需要
+1.登陆已经创建的用户 db.auth('A','123456')
+登陆成功后可以继续创建用户
+2. db.createUser({user: 'B', pwd: '123456', roles:[{db:three}]})
+
+查看所有用户
+1. use admin
+2. show users（root权限）
+
+删除用户
+db.dropUser('用户名')
+
