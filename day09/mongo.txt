@@ -1,0 +1,5 @@
+use admin
+db.createUser({user: 'A', pwd:'123456', roles:["root"]})
+show users
+
+db.auth('A', '123456')
