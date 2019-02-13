@@ -10,10 +10,15 @@ data = {
     'gender': true
 }
 db.集合名字.insert(data)
-db.stu.insert({"_id": 3,"name": '张三','age': 18,'gender': true})
-db.stu.insert({"_id": 4,"name": '李四','age': 18,'gender': true})
-db.stu.insert({"_id": 5,"name": '王五','age': 18,'gender': true})
-db.stu.insert({"_id": 6,"name": 'jerry','age': 18,'gender': true})
+db.stu.insert({"_id": 1,"name": '张三','age': 38,'gender': true, 'like': '猫'})
+db.stu.insert({"_id": 2,"name": '李四','age': 48,'gender': true, 'like': '狗'})
+db.stu.insert({"_id": 3,"name": '王五','age': 58,'gender': true, 'like': '荷兰鼠'})
+db.stu.insert({"_id": 4,"name": 'jerry','age': 18,'gender': true, 'like': '猫'})
+db.stu.insert({"_id": 5,"name": '小明','age': 28,'gender': true, 'like': '荷兰鼠'})
+db.stu.insert({"_id": 6,"name": '小红','age': 38,'gender': false, 'like': '猫'})
+db.stu.insert({"_id": 7,"name": '小兰','age': 10,'gender': false, 'like': '狗'})
+db.stu.insert({"_id": 8,"name": '小丽','age': 30,'gender': false, 'like': '荷兰鼠'})
+
 
 删除
 db.集合名字.remove({'name':"zhangsan"})
@@ -27,3 +32,61 @@ db.stu.remove({})
 db.stu.drop() 把表也删除了， 而上面的remove不删除表，只删除表里面的数据
 
 更改 update
+db.stu.update({'_id':3},{$set：{'name':'小王八'}})
+批量修改
+db.stu.update({'gender':true},{$set：{'age':66}})这样只能修改一个 需要多加一个参数multi:true
+db.stu.update({'gender':true},{$set：{'age':66}},{multi:true})
+更改/删除某个属性 $unset
+db.stu.update({'_id':3},{$unset：{'gender':""}})
+
+基本查询
+db.集合名字.find()	--> 查询所有数据 
+db.集合名字.find({条件})
+
+比较运算
+$lt $lte $gt $gte $ne 不等于
+db.stu.find({'age':{$gt:18}})
+
+逻辑运算
+$and  默认就使用的and
+$or
+db.stu.find({'age':{$gt:18},'gender':true})
+db.stu.find({$and:[{'age':{$gt:18}}, {'gender':true}]})
+混用 年龄大于28岁 或者 喜欢荷兰鼠 gender:true
+db.stu.find({$and:[{"gender":true},{$or:[{'age':{$gt:28}},{'like':'荷兰鼠'}]}]})
+
+范围运算符
+$in  db.stu.find({'age':{$in:[18,28,38]}}) 年龄是18,28和38的
+$nin  db.stu.find({'age':{$nin:[18,28,38]}}) 年龄不是18,28和38的
+
+正则表达式$regex
+db.stu.find({'name':{$regex:"^小"}}) 查找name 以小开头的
+db.stu.find({'name':/小/})
+
+定义函数 $where 使用的js
+db.stu.find({$where:function(){return this.age > 45}})
+
+查询结果显示
+limit 
+db.stu.find().limit(300)结果显示300个
+
+skip limit和skip混合使用 优先执行skip
+db.stu.find().skip(300) 结果显示300个之后的
+
+投影 我其他的信息不想看，只想看姓名，年龄 字段显示1，不显示0
+db.stu.find({},{name:1,age:1})
+
+排序 1正序 -1倒叙
+db.stu.find().sort({age:1})
+
+统计个数
+db.stu.find({'gender':true}).count() == db.stu.count({gender:true})
+db.stu.count({条件})
+
+去重
+db.stu.distinct({'name',{}})
+db.stu.distinct({'name',{条件}})
+
+
+
+
