@@ -1,6 +1,6 @@
-增/删/改/查询/查询结果显示/符合查询
+### 增/删/改/查询/查询结果显示/符合查询
 
-增 insert
+#### 增 insert
 db.集合名字.insert() 插入一个字典
 如果嫌弃 "_id" 过长可以
 data = {
@@ -20,7 +20,7 @@ db.stu.insert({"_id": 7,"name": '小兰','age': 10,'gender': false, 'like': '狗
 db.stu.insert({"_id": 8,"name": '小丽','age': 30,'gender': false, 'like': '荷兰鼠'})
 
 
-删除
+#### 删除
 db.集合名字.remove({'name':"zhangsan"})
 db.集合名字.remove({'gender':true})
 符合条件的都会删除
@@ -31,7 +31,7 @@ db.集合名字.remove({'gender':true},{justOne:true})
 db.stu.remove({})
 db.stu.drop() 把表也删除了， 而上面的remove不删除表，只删除表里面的数据
 
-更改 update
+#### 更改 update
 db.stu.update({'_id':3},{$set：{'name':'小王八'}})
 批量修改
 db.stu.update({'gender':true},{$set：{'age':66}})这样只能修改一个 需要多加一个参数multi:true
@@ -39,7 +39,7 @@ db.stu.update({'gender':true},{$set：{'age':66}},{multi:true})
 更改/删除某个属性 $unset
 db.stu.update({'_id':3},{$unset：{'gender':""}})
 
-基本查询
+### 基本查询
 db.集合名字.find()	--> 查询所有数据 
 db.集合名字.find({条件})
 
@@ -88,5 +88,139 @@ db.stu.distinct({'name',{}})
 db.stu.distinct({'name',{条件}})
 
 
+### 复合查询
+$aggregate() 管道
+```聚合查询
+db.xx.aggregate(
+    [
+        {管道1},
+        {管道2}
+    ]
+)
+```
+$group() 分组; 按照男女分组
+db.xx.aggregate(
+    [
+        {$group:{_id:"$gender"}},
+    ]
+)
+// 表达式 $sun $avg 求和、求平均 $first $last $max $min $push
+// 按照 性别分组， 求年龄之和
+db.xx.aggregate(
+    [
+        {$group:{_id:"$gender", sumage:{$sum:"$age"}}},
+    ]
+)
+db.xx.aggregate(
+    [
+        {$group:{_id:"$gender", sumage:{$avg:"$age"}}},
+    ]
+)
+// 按照爱好，求最大年龄
+db.xx.aggregate(
+    [
+        {$group:{_id:"$like", max_age:{$max:"$age"}}
+    ]
+)
+// 按照男女分, 看他们都养了什么宠物
+db.xx.aggregate([
+    {$group:{_id:"$gender",animal:{$push:"$like"}}}
+])
 
 
+$match 比较 功能上等价于find find不能使用管道传递
+db.xx.find({like:'小猫'})
+db.xx.aggregate([
+    {$match:{like:"小猫"}}
+])
+// 求年龄大于20 按性别分组的平均值
+db.xx.aggregate([
+    {$match:{age:{$gt:20}}},
+    {$group:{_id:"$gender",age_avg:{$avg:"$age"}}}
+])
+
+
+$project 投影 显示的字段 显示1ortrue
+// 求年龄小于50岁的;按照喜好分组， 求年龄之和 求年龄平均值; 我只想看到之和
+db.stu.aggregate([
+    {$match:{age:{$lt:50}}},
+    {$group:{_id:"$like",sumage:{$sum:"$age"},avgage:{$avg:"$age"}}},
+    {$project:{sumage:1}}
+])
+
+
+$sort 排序
+// 按照年龄倒叙
+db.xx.aggregate([
+    {$sort:{age:-1}}
+])
+
+$skip
+// 跳过2个，只看5个 在管道里不能随便调换limit 和 skip的顺序
+db.xx.aggregate([
+    {$skip:2},
+    {$limit:5}
+])
+$limit
+
+$unwind 拆分列表; $push 生成的列表
+// 按照性别分组， 看看 男生和女生都叫什么名字
+db.xx.aggregate([
+    {$group:{_id:"$gender",names:{$push:"$name"}}},
+    {$unwind:"$names"}
+])
+
+// 年龄小于60岁，按照性别分组，取出喜欢的宠物，拆分文档
+dv.xx.aggregate([
+    {$match:{age:{$lt:60}}},
+    {$group:{_id:"$gender",like_animals:{$push:"$like"}}},
+    {$unwind:"$like_animals"}
+])
+
+### 索引查询
+explain('executionStats') executionTImeMillis 这个值是毫秒
+// 假设现在有50W的数据, 查看一条数据需要多长时间
+```js
+for (let i=0; i<= 500000; i++) {
+    db.data.insert(
+        {
+            _id: i,
+            user: "user" + i,
+            age: i
+        }
+    )
+}
+```
+// id 假设查找id  查找时间1ms 主键查询速度最快
+db.data.find({_id:333333}).explain("executionStats")
+// user 查找时间222ms
+db.data.find({user:"user333333"}).explain("executionStats")
+// age 查找时间 227ms
+db.data.find({age:333333}).explain("executionStats")
+
+
+自定义索引（类主键） db.sy.ensureIndex({name:1})
+// 设置内容key 为id; 提高查询速度
+db.data.ensureIndex({user:1})
+// user设成主键之后 查找时间变为1ms
+db.data.find({user:"user333333"}).explain("executionStats")
+
+查看所有索引 getindexes()
+db.data.getIndexes()
+
+删除 dropIndex("name_1") 不能删除主键
+db.data.dropIndex("user_1")
+
+
+### 备份和恢复
+备份 mongodump
+mongodump -h 127.0.0.1:27017 -d 库的名字 -o 要导出到文件夹的路径
+恢复 mongorestore
+mongorestore -h 127.0.0.1:27017 -d 原来库的名字(新建库的名字) --dir 要导入的库的本地地址
+
+导出文件 json csv
+mongoexport -h 127.0.0.1:27017 -d 库的名字 -c 表名 -o data.json
+mongoexport -h 127.0.0.1:27017 -d 库的名字 -c 表名 -o data.csv --type csv -f _id,name,age
+导入文件
+mongoexport -h 127.0.0.1:27017 -d 原来库的名字(新建库的名字) -c 新起的表名（跟原来表名相同也可以） --file data.json
+### mongo 和 Python交互
