@@ -1,0 +1,26 @@
+> 三范式
+1. 列不可拆分
+2. 唯一标志
+3. 引用主键
+
+> 数据完整性
+1. 字段类型
+  1. int decimal（小数） 数字
+  2. char varchar text 字符串
+  3. datetime   日期
+  4. bit        布尔
+2. 约束
+    主键  primary key
+    非空  not null
+    唯一  unique
+    默认  default
+    外键  foreign
+3. 逻辑删除
+    物理删除    在磁盘上真正删除
+    重要数据    删除标识  1 / 0
+
+
+> 数据库的启动
+mysql.server start
+mysql.server.stop
+

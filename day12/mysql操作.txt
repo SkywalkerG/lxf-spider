@@ -1,0 +1,77 @@
+-- 查询版本
+-- select version();
+-- 显示当前时间
+-- select now();
+
+-- 数据库操作
+-- 查询数据库
+-- SHOW DATABASES;
+-- 创建数据库
+-- CREATE DATABASE animal charset = utf8;
+-- 切换数据库
+-- use animal;
+-- 查看当前数据库
+-- SELECT DATABASE();
+-- 删除数据库
+-- drop DATABASE animal;
+
+-- 表操作
+-- SELECT DATABASE();
+-- use animal;
+-- 查看所有表
+-- show tables;
+-- 创建表
+-- CREATE TABLE dog(
+-- id int auto_increment PRIMARY KEY,
+-- name VARCHAR(10) not null
+-- );
+-- 改表 添加字段
+-- ALTER TABLE dog ADD birthday datetime;
+--  查看表描述
+-- DESC dog;
+-- ALTER TABLE dog ADD age int not null;
+-- 删除表中字段 也是用alter
+-- ALTER TABLE dog drop age;
+-- 改表名
+-- RENAME TABLE dog to cat;
+-- show tables;
+-- 命令查看建表时的字段
+-- show CREATE TABLE cat;
+
+
+-- 数据操作
+-- 先查看表
+-- SHOW TABLES;
+-- CREATE TABLE dog(
+-- id int auto_increment PRIMARY KEY,
+-- name VARCHAR(20) not null,
+-- gender bit DEFAULT 0
+-- )DEFAULT CHARSET utf8;
+-- DESC dog;
+-- 插入数据
+-- INSERT INTO dog values(1, "拉布拉多", 0);
+-- 查看表中内容
+-- SELECT * from dog;
+-- INSERT INTO dog values(2, "柯基犬", 1);
+-- 不写id 因为id是自增的 缺省插入
+-- INSERT INTO dog(name) VALUES('小猎犬');
+-- INSERT INTO dog(name, gender) VALUES('德国牧羊犬', 1);
+-- 插入多个数据
+-- INSERT INTO dog VALUES(5,"腊肠",0),(6,"约克夏",1)
+-- INSERT INTO dog(name) values("太师犬"),("贵宾犬"),("狮子狗");
+
+-- 修改
+-- UPDATE dog set name="泰迪" WHERE id=8;
+-- UPDATE dog set name="秋田犬" WHERE id=1;
+
+-- 删除
+-- 物理删除 逻辑删除
+-- DELETE FROM dog WHERE id=4;
+-- DELETE FROM dog WHERE name="泰迪";
+-- SELECT * FROM dog;
+-- 逻辑删除 在表中添加字段
+-- ALTER TABLE dog ADD isdelete bit DEFAULT 0;
+-- UPDATE dog set isdelete=1 WHERE id=2;
+
+-- 更新 update
+-- update dog set name="狗娃" WHERE id=2;
