@@ -1,0 +1,18 @@
+Scrapy的架构 面试必考点：会画架构图 + 数据流 + 组件功能
+
+			spider
+	
+item pipelines		engine		downloader
+			scheduler
+
+1. spider 发送 	requests 到 engine
+2. engine 将	requests 交给 scheduler
+3. scheduler 将	requsets 再交给engine
+4. 引擎   将 	requests交给downloader
+5. downeloader 将 response 返回给 引擎
+6. 引擎将	response 交给 spider
+7. spider  将 items/新的请求 交给 引擎
+8.引擎将 item交给 itempipeline  将新的请求交给调度器
+
+4和5 经过下载中间件
+6和7 经过爬虫中间件
