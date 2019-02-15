@@ -1,0 +1,3 @@
+1. canvas 绘图的 画的
+2. 下载 html页面，在页面里面写 原生javascript 将canvas 绘图 绘制出来
+3. Pillow 库， 截取屏幕 保存

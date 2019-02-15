@@ -27,6 +27,8 @@ set one '1'
 set two '2'
 set three '3'
  ```
+
+
  - 查看键 keys *
  ```cmd
  keys *
@@ -120,10 +122,83 @@ count > 0 从头删
       = 0 符合条件的所有删除
 ```
 #### set
-- 
+> 特点: 无序、 string、 不重复、没有修改
+- 增加
+```
+sadd key value value value
+```
+- 删除
+```
+srem key value
+srem key value1 value2
+```
+- 查询 smember key
+```
+smember key
+```
+- 判断一个元素是否在里面 sismember 返回1找见返回0没找见
+```
+sadd oneset 1 2 3 4
+smemember oneset
+sismember oneset 0
+sismember oneset 2
 ```
 
+#### zset 有序集合 sorted set
+- 添加 zadd key 权重（影响最后显示） value
 ```
+zadd one 1 a 
+zadd one 3 b
+zadd one 4 c
+zadd one 2 d
+```
+- 查看  zrange key 索引起始位置 索引终止位置
+```
+zrange one 0 -1 
+```
+- 查看 权重值之间的 值
+``` 查看one中权重值在2-4的值  
+zrangebyscore one 2 4 
+```
+- 查看 根据权重 zscore key 权重
+``` 查看 one 中权重为1的值
+zscore one 1
+```
+- 删除指定值
+```
+zrem key value
+zremrangebyscore key 权重范围
+```
+
+
+#### 键key的命令
+```
+# 查看
+keys * 
+# 查看 以什么开头的 key
+keys o* 
+keys on*
+# 判断 key 是否存在
+exists key
+
+type key
+
+del key
+del key1 key2 key3
+
+# 给key设置过期时间 做中转
+expire key 时间 
+```
+#### 删数据库
+```
+# 删除当前数据库
+flushdb
+# 删除所有数据库
+flushall
+```
+
+
+
 
 
 
