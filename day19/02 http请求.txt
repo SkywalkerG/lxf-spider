@@ -1,0 +1,19 @@
+splash 提供的http接口
+
+对于抓取网页，最重要的就是： render.html
+
+渲染html
+
+# curl
+下载地址 https://curl.haxx.se/download.html#Win64
+# get 请求
+curl http://192.168.99.100:8050/render.html?url=http://www.baidu.com&timeout=3&wait=0.5
+url 必填
+timeout 选填
+wait 选填
+# post 请求
+curl http://192.168.99.100:8050/render.html?url=http://www.baidu.com&timeout=3&wait=0.5 -X POST
+
+
+
+http://192.168.99.100:8050/info?wait=0.5&images=1&expand=1&timeout=90.0&url=http%3A%2F%2Fbaidu.com&lua_source=function+main%28splash%2C+args%29%0D%0A++assert%28splash%3Ago%28args.url%29%29%0D%0A++assert%28splash%3Await%280.5%29%29%0D%0A++return+%7B%0D%0A++++html+%3D+splash%3Ahtml%28%29%2C%0D%0A++++png+%3D+splash%3Apng%28%29%2C%0D%0A++++har+%3D+splash%3Ahar%28%29%2C%0D%0A++%7D%0D%0Aend

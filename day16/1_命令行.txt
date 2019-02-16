@@ -1,0 +1,20 @@
+1.新建项目
+scrapy startproject 项目名
+
+2.新建爬虫
+scrapy genspider 爬虫名 网站主域名
+
+3.列出项目所有spider名称
+scrapy list
+
+4.view存储、打开网页
+scrapy view 网页地址
+
+5.命令行测试
+scrapy shell 网页地址
+
+6.运行爬虫
+scrapy crawl 爬虫名
+scrapy crawl 爬虫名 -o xxx.json
+scrapy crawl 爬虫名 -o xxx.csv
+scrapy runspider 爬虫名.py

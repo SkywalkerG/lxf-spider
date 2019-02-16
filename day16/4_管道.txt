@@ -1,0 +1,14 @@
+每个管道组件都是一个实现某功能的Python类，常见功能有：
+清理html数据
+做确认
+查重
+存入数据库
+
+每个管道组件的类，必须要有以下方法：
+process_item(self, item, spider)
+open_spider(self, spider)
+close_spider(self, spider)
+from_crawler(cls, crwaler)
+
+
+# 丢弃数据项
