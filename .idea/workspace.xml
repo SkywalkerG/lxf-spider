@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="389a6b63-3059-4f50-8ac5-97b0dad81ae6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day19/case06.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/case07.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/mugglecode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/qqmusic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/read_json.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day19/书籍推荐" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/SimLogin/case01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/SimLogin/case02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/get_SeanCheney.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/practice/selenium_ajax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day19/use_re.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day19/qqmusic.py" beforeDir="false" afterPath="$PROJECT_DIR$/day19/qqmusic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +19,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/lxf_spider$case07.coverage" NAME="case07 Coverage Results" MODIFIED="1550381461258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19" />
-    <SUITE FILE_PATH="coverage/lxf_spider$case01.coverage" NAME="case01 Coverage Results" MODIFIED="1550327768636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19" />
+    <SUITE FILE_PATH="coverage/lxf_spider$case01.coverage" NAME="case01 Coverage Results" MODIFIED="1550393816258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19/SimLogin" />
     <SUITE FILE_PATH="coverage/lxf_spider$use_selenium.coverage" NAME="use_selenium Coverage Results" MODIFIED="1550319120530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18" />
     <SUITE FILE_PATH="coverage/lxf_spider$mugglecode.coverage" NAME="mugglecode Coverage Results" MODIFIED="1550377469464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19" />
     <SUITE FILE_PATH="coverage/lxf_spider$1_info.coverage" NAME="1_info Coverage Results" MODIFIED="1550293277315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16/maitian" />
@@ -37,16 +38,19 @@
     <SUITE FILE_PATH="coverage/lxf_spider$cate04.coverage" NAME="cate04 Coverage Results" MODIFIED="1550329385389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19" />
     <SUITE FILE_PATH="coverage/lxf_spider$use_pyppeteer.coverage" NAME="use_pyppeteer Coverage Results" MODIFIED="1550316652632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18" />
     <SUITE FILE_PATH="coverage/lxf_spider$taobao.coverage" NAME="taobao Coverage Results" MODIFIED="1550051571756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08" />
+    <SUITE FILE_PATH="coverage/lxf_spider$selenium_ajax.coverage" NAME="selenium_ajax Coverage Results" MODIFIED="1550391983514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19/practice" />
     <SUITE FILE_PATH="coverage/lxf_spider$use_etree_xpath__1_.coverage" NAME="use_etree_xpath (1) Coverage Results" MODIFIED="1550303318185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16/getproxies/getproxies/spiders" />
     <SUITE FILE_PATH="coverage/lxf_spider$02_json_use.coverage" NAME="02-json-use Coverage Results" MODIFIED="1550033617918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08" />
     <SUITE FILE_PATH="coverage/lxf_spider$case03.coverage" NAME="case03 Coverage Results" MODIFIED="1550329172388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19" />
+    <SUITE FILE_PATH="coverage/lxf_spider$get_SeanCheney.coverage" NAME="get_SeanCheney Coverage Results" MODIFIED="1550398549684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19" />
     <SUITE FILE_PATH="coverage/lxf_spider$8btcClass.coverage" NAME="8btcClass Coverage Results" MODIFIED="1549989009251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day06" />
     <SUITE FILE_PATH="coverage/lxf_spider$case06.coverage" NAME="case06 Coverage Results" MODIFIED="1550379129439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19" />
     <SUITE FILE_PATH="coverage/lxf_spider$use_selenium_jrtt.coverage" NAME="use_selenium_jrtt Coverage Results" MODIFIED="1550321015633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18" />
     <SUITE FILE_PATH="coverage/lxf_spider$allitebooks.coverage" NAME="allitebooks Coverage Results" MODIFIED="1550050781827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08" />
     <SUITE FILE_PATH="coverage/lxf_spider$use_etree_xpath__2_.coverage" NAME="use_etree_xpath (2) Coverage Results" MODIFIED="1550303671297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16" />
     <SUITE FILE_PATH="coverage/lxf_spider$use_etree_xpath.coverage" NAME="use_etree_xpath Coverage Results" MODIFIED="1550302665864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day16/downloadertest/downloadertest/spiders" />
-    <SUITE FILE_PATH="coverage/lxf_spider$case02.coverage" NAME="case02 Coverage Results" MODIFIED="1550329095642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19" />
+    <SUITE FILE_PATH="coverage/lxf_spider$use_re.coverage" NAME="use_re Coverage Results" MODIFIED="1550390129807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day18" />
+    <SUITE FILE_PATH="coverage/lxf_spider$case02.coverage" NAME="case02 Coverage Results" MODIFIED="1550394205563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day19/SimLogin" />
     <SUITE FILE_PATH="coverage/lxf_spider$03_json_to_csv.coverage" NAME="03-json_to_csv Coverage Results" MODIFIED="1550035420907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08" />
     <SUITE FILE_PATH="coverage/lxf_spider$8btc.coverage" NAME="8btc Coverage Results" MODIFIED="1549985069570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day06" />
     <SUITE FILE_PATH="coverage/lxf_spider$sun0769.coverage" NAME="sun0769 Coverage Results" MODIFIED="1550152377042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day11" />
@@ -58,42 +62,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day19/cate04.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-              <folding>
-                <element signature="e#20#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day19/case05.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-              <folding>
-                <element signature="e#37#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day19/mugglecode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day19/read_json.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,29 +104,65 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day19/qqmusic.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day19/practice/selenium_ajax.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="8" column="85" lean-forward="true" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="85" />
+            <state relative-caret-position="46">
+              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day19/mugglecode.json">
+        <entry file="file://$PROJECT_DIR$/day19/SimLogin/case01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day19/SimLogin/case02.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="22" column="88" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day19/get_SeanCheney.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="e#28#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day19/SeanCheney.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="47" selection-start-column="47" selection-end-column="47" />
+              <caret column="67" lean-forward="true" selection-start-column="67" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day18/selenium简单文档">
+        <entry file="file://$PROJECT_DIR$/day18/use_selenium_sougouweixin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="46">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -189,6 +193,11 @@
       <find>Python 的基本语法规则</find>
       <find>新媒体排版</find>
       <find>：header验证、cookie验证、IP频率验证、auth验证？——反爬应对的策略（突破 reddit 网站的 header 验证，突破煎蛋的cookie验证，突破豆瓣电影的IP频率验证，突破知乎的auth验证）</find>
+      <find>pgv_pvi=9036690432</find>
+      <find>req</find>
+      <find>purl</find>
+      <find>SrfCdnDispatchServer</find>
+      <find>《Python Cookbook》第三版最佳译本</find>
     </findStrings>
     <dirStrings>
       <dir>E:\pythonProject\lxf-spider\day19</dir>
@@ -200,11 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/day09/mongodb文档内容操作.txt" />
-        <option value="$PROJECT_DIR$/day09/use_python_control_mongo.py" />
-        <option value="C:/Program Files/Redis/redis.windows.conf" />
-        <option value="$PROJECT_DIR$/day11/sun0769.py" />
-        <option value="$PROJECT_DIR$/day11/redis-learn.md" />
         <option value="$PROJECT_DIR$/day12/mysql.txt" />
         <option value="$PROJECT_DIR$/day12/mysql操作.txt" />
         <option value="$PROJECT_DIR$/day12/day13.txt" />
@@ -251,12 +255,17 @@
         <option value="$PROJECT_DIR$/day19/书籍推荐" />
         <option value="$PROJECT_DIR$/day19/case07.py" />
         <option value="$PROJECT_DIR$/day19/qqmusic.py" />
+        <option value="$PROJECT_DIR$/day18/use_re.py" />
+        <option value="$PROJECT_DIR$/day19/practice/selenium_ajax.py" />
+        <option value="$PROJECT_DIR$/day19/SimLogin/case01.py" />
+        <option value="$PROJECT_DIR$/day19/SimLogin/case02.py" />
+        <option value="$PROJECT_DIR$/day19/get_SeanCheney.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="176" />
-    <option name="y" value="212" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1210" />
     <option name="height" value="714" />
   </component>
@@ -291,15 +300,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\pythonProject\lxf-spider\day06" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\pythonProject\lxf-spider\day19" />
       <recent name="E:\pythonProject\lxf-spider" />
       <recent name="E:\pythonProject\lxf-spider\day16" />
       <recent name="E:\pythonProject\lxf-spider\day16\getproxies\getproxies\spiders" />
       <recent name="E:\pythonProject\lxf-spider\day16\getproxies\getproxies" />
-      <recent name="E:\pythonProject\lxf-spider\day16\maitian" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\pythonProject\lxf-spider\day06" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -314,8 +323,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.qqmusic">
-    <configuration name="case06" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.get_SeanCheney">
+    <configuration name="case01" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lxf-spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -323,12 +332,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day19" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day19/SimLogin" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/case06.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/SimLogin/case01.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -337,7 +346,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="case07" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="case02" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lxf-spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -345,12 +354,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day19" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day19/SimLogin" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/case07.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/SimLogin/case02.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -359,7 +368,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="mugglecode" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="get_SeanCheney" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lxf-spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -372,7 +381,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/mugglecode.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/get_SeanCheney.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -381,7 +390,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="qqmusic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="selenium_ajax" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lxf-spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -389,12 +398,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day19" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day19/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/qqmusic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/practice/selenium_ajax.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -403,7 +412,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="read_json" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="use_re" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lxf-spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -411,12 +420,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day19" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day18" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day19/read_json.py" />
+      <option name="SCRIPT_NAME" value="E:\pythonProject\lxf-spider\day19\use_re.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -427,11 +436,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.qqmusic" />
-        <item itemvalue="Python.case07" />
-        <item itemvalue="Python.case06" />
-        <item itemvalue="Python.read_json" />
-        <item itemvalue="Python.mugglecode" />
+        <item itemvalue="Python.get_SeanCheney" />
+        <item itemvalue="Python.case02" />
+        <item itemvalue="Python.case01" />
+        <item itemvalue="Python.selenium_ajax" />
+        <item itemvalue="Python.use_re" />
       </list>
     </recent_temporary>
   </component>
@@ -454,12 +463,12 @@
       <workItem from="1550189872146" duration="5814000" />
       <workItem from="1550211180238" duration="6897000" />
       <workItem from="1550285342267" duration="33729000" />
-      <workItem from="1550371572372" duration="10291000" />
+      <workItem from="1550371572372" duration="21575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112443000" />
+    <option name="totallyTimeSpent" value="123727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,15 +480,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5060729" visible="true" weight="0.18701799" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5060729" visible="true" weight="0.18701799" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.49392712" side_tool="true" weight="0.23652174" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34501347" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.46035805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39897698" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,7 +496,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32951653" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286445" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.37212276" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.20344828" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32352942" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -526,37 +535,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day12/mysql操作.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day16/maitian/maitian/spiders/mt.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/scrapy/loader/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2086520748/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2742">
-          <caret line="731" column="6" selection-start-line="731" selection-start-column="6" selection-end-line="731" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day16/maitian/maitian/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day16/maitian/简单的数据分析" />
-    <entry file="file://$PROJECT_DIR$/day16/maitian/简单的画图" />
     <entry file="file://$PROJECT_DIR$/day16/maitian/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -773,30 +751,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day18/use_selenium_sougouweixin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day19/02 http请求.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day19/case01.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,13 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day19/read_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day19/case06.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
@@ -888,6 +839,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day19/qqmusic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day19/case07.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -898,10 +856,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day19/qqmusic.py">
+    <entry file="file://$PROJECT_DIR$/day18/use_selenium_sougouweixin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="8" column="85" lean-forward="true" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="85" />
+        <state relative-caret-position="46">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/use_re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="94" column="39" selection-start-line="94" selection-start-column="39" selection-end-line="94" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/practice/selenium_ajax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/SimLogin/case01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/SimLogin/case02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="22" column="88" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/case01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/read_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/SeanCheney.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/get_SeanCheney.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#28#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day19/SeanCheney.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="67" lean-forward="true" selection-start-column="67" selection-end-column="67" />
         </state>
       </provider>
     </entry>
